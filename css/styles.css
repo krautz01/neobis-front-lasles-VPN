@@ -23,7 +23,7 @@ body {
 
 .header {
   margin-top: 45px;
-  margin-bottom: 78.49px;
+  margin-bottom: 87.49px;
   width: 100%;
   height: 45px;
   display: flex;
@@ -109,12 +109,19 @@ body {
 .block_1_text {
   width: 50%;
   height: 100%;
+  padding: 30px 0px 0px 0px;
+}
+
+.block_1_text p {
+  margin-top: 0px;
 }
 
 .block_1_text p:nth-child(1) {
   font-family: "Rubik";
   font-size: 50px;
   font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 17px;
 }
 
 .block_1_text p:nth-child(2) {
@@ -122,6 +129,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 51px;
 }
 
 .block_1 button {
@@ -135,7 +143,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  box-shadow: 0px 20px 60px rgba(255, 60, 60, 0.35);
+  box-shadow: 0px 5px 60px rgba(255, 60, 60, 0.35);
 }
 
 /*//////////////////////////////////////////////////////////////*/
@@ -150,34 +158,34 @@ body {
   border: #ffffff none;
   border-radius: 10px;
   box-shadow: 52px 52px 52px rgba(0, 0, 0, 0.06);
-  margin-bottom: 20px;
+  margin-bottom: 90px;
 }
 
-.block_2 div {
+.block_2_about {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.block_2_user_desc {
+.block_2_about_text {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
-.block_2_user_desc p:first-child {
+.block_2_about_text h4 {
   font-family: "Rubik";
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  margin: 0;
 }
 
-.block_2_user_desc p:last-child {
+.block_2_about_text p {
   font-family: "Rubik";
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+  margin: 0;
 }
 
 /*//////////////////////////////////////////////////////////////*/
@@ -185,15 +193,24 @@ body {
 .block_3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.block_3 img {
+  margin-left: 30px;
 }
 
 .block_3_text {
-  width: 50%;
+  margin-right: 2px;
 }
 
 .block_3_text img {
   width: 24px;
   height: 24px;
+}
+
+.block_3_text p {
+  margin: 0px 0px 0px 0px;
 }
 
 .block_3_text p:nth-child(1) {
@@ -207,17 +224,19 @@ body {
 .block_3_text p:nth-child(2) {
   font-family: "Rubik";
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   color: #4f5665;
 }
 
 .block_3_ul {
+  padding: 0px 0px 0px 0px;
 }
 
 .block_3_ul li {
   display: flex;
-  align-items: center;
+  align-items: left;
+
 }
 
 .block_3_ul p {
@@ -233,6 +252,10 @@ body {
 
 /*//////////////////////////////////////////////////////////////*/
 
+.section_2 {
+  padding: 210px 0px 0px 0px;
+}
+
 .block_4 {
   text-align: center;
   margin-bottom: 150px;
@@ -244,6 +267,16 @@ body {
   font-weight: 500;
   line-height: 50px;
   color: #0b132a;
+  margin: 0px 0px 18px 0px;
+}
+
+.block_4 h2 {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0b132a;
+  margin-bottom: 21px;
 }
 
 .block_4 p {
@@ -252,28 +285,54 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #4f5665;
+  margin: 0px 0px 62px 0px;
 }
 
 .choose_plan_wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0px 25px;
 }
 
 .choose_plan {
-  width: 330px;
-  height: 760px;
+  width: 326px;
+  height: 680px;
   border-radius: 10px;
   border: 2px #dddddd solid;
-  padding: 62.87px 62.87px 62.87px 62.87px;
+  padding: 76px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.choose_plan div {
+.choose_plan_text {
   display: flex;
+  justify-content: center;
 }
 
 .choose_plan_desc {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: left;
+}
+
+.choose_plan_desc li {
+  height: 30px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.choose_plan_desc p {
+  font-family: "Rubik";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f5665;
+  margin: 0px 0px 0px 20px;
 }
 
 .choose_plan_desc img {
@@ -281,15 +340,21 @@ body {
   height: 24px;
 }
 
-.choose_plan div p {
-  font-family: "Rubik";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #4f5665;
+.choose_plan_bottom {
 }
 
-.choose_plan_desc button {
+.choose_plan_bottom p {
+  font-family: "Rubik";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0px 0px 18px 0px;
+  color: #0b132a;
+}
+
+.choose_plan_bottom button {
   width: 177.88px;
   height: 45px;
   border: 2px #f53838 solid;
@@ -302,10 +367,12 @@ body {
   letter-spacing: 0px;
   text-align: center;
   color: #f53838;
+  margin-bottom: 49px;
 }
 
 .block_5 {
   text-align: center;
+  margin-bottom: 76px;
 }
 
 .block_5 h1 {
@@ -340,6 +407,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #0b132a;
+  margin-bottom: 20px;
 }
 
 .block_6 h2 {
@@ -349,59 +417,77 @@ body {
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
-
   color: #4f5665;
+  margin-bottom: 60px;
 }
 
 .card_slide {
-  width: 1440px;
+  width: 1298px;
   display: flex;
   justify-content: space-between;
 }
 
 .card {
-  width: 400px;
-  height: 230px;
+  width: 335px;
+  height: 167px;
   border: 2px #f53838 solid;
   border-radius: 10px;
+  padding: 30px 30px 30px 28px;
 }
 
 .cardTop {
   display: flex;
   justify-content: space-between;
 }
+
 .userInfo {
   display: flex;
   align-items: center;
+  width: 212px;
+  height: 50px;
 }
+
 .userInfo img {
   width: 50px;
   height: 50px;
+}
+
+.userText {
+  display: flex;
+  height: 50px;
+  margin: 0px 0px 0px 20px;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .userName {
   font-family: "Rubik";
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0em;
-  text-align: center;
+  text-align: left;
   color: #0b132a;
+  margin: 0;
 }
 
 .userLocation {
   font-family: "Rubik";
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0em;
-  text-align: center;
+  text-align: left;
   color: #4f5665;
+  margin: 0;
 }
+
 .rating {
   display: flex;
   align-items: center;
 }
 
+.cardDown {
+}
+
 .cardText {
+  margin: 9px 0px 0px 0px;
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
