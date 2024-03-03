@@ -213,7 +213,6 @@ li {
 }
 
 .features__list li {
-  
   display: flex;
   align-items: center;
   margin-bottom: 11px;
@@ -223,7 +222,14 @@ li {
   margin: 0px 0px 0px 0px;
 }
 
-.features__list li p {
+/* .features__list li p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+} */
+
+.features__list__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -239,6 +245,7 @@ li {
 .pricing {
   text-align: center;
   margin-bottom: 150px;
+  background-color: #f8f8f8;
 }
 
 .pricing h1 {
@@ -355,6 +362,7 @@ li {
   align-items: center;
   text-align: center;
   margin-bottom: 84px;
+  background-color: #f8f8f8;
 }
 
 .networks__text {
@@ -601,20 +609,17 @@ footer {
   padding: 8px 0px 0px 0px;
 }
 
-.footer__contacts p{
+.footer__contacts p {
   color: #4f5665;
   line-height: 30px;
   margin: 20px 0px 24px 0px;
 }
 
-
 .social_networks {
-  
   width: 320px;
   height: 33.6px;
   margin-bottom: 18px;
 }
-
 
 .footer__nav {
   display: flex;
