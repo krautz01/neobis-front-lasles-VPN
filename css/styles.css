@@ -1,6 +1,8 @@
 /* Пример стилей */
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
   font-style: normal;
   color: #0b132a;
   margin: 0;
@@ -8,13 +10,17 @@ body {
   display: flex;
   justify-content: center;
   width: 1440px;
-  height: 5189px;
-  top: -2360px;
-  left: -761px;
 }
 
-.red {
-  background-color: #ff0000;
+button {
+  width: 150px;
+  height: 45px;
+  border: 2px #f53838 solid;
+  border-radius: 50px;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  color: #f53838;
 }
 
 .wrapper {
@@ -32,91 +38,61 @@ body {
 }
 
 .icon {
-  width: 147px;
+  width: 150px;
   height: 36.23px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.icon img:first-child {
+.icon img {
   width: 35px;
   height: 36.23px;
 }
-.icon img:last-child {
-  width: 104px;
-  height: 24px;
+.icon__text {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.menu {
+.nav {
   width: 451px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Rubik";
-  font-size: 16px;
-  font-weight: 400;
   color: #4f5665;
 }
 
 .auth {
-  width: 225px;
   height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Rubik";
-  font-size: 16px;
 }
 
-.auth div :first-child {
-  width: 53px;
-  font-weight: 500;
-}
-
-.auth div:last-child {
-  color: #f53838;
-  width: 150px;
-  height: 45px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #f53838;
-  border-radius: 50px;
+.auth button:first-child {
+  border: none;
+  color: #0b132a;
 }
 
 /*////////////////////////////////////////////////////////////////////////////*/
 
-.content {
-  width: 100%;
-}
-
-.section_1 {
-  background-color: #ffffff;
-}
-
-.section_2 {
-  background-color: #f8f8f8;
-}
-
-.block_1 {
+.intro {
   width: 1207px;
   margin-bottom: 108px;
   display: flex;
 }
 
-.block_1_text {
+.intro__text {
   width: 50%;
   height: 100%;
   padding: 30px 0px 0px 0px;
 }
 
-.block_1_text p {
+.intro__text p {
   margin-top: 0px;
 }
 
-.block_1_text p:nth-child(1) {
+.intro__text p:nth-child(1) {
   font-family: "Rubik";
   font-size: 50px;
   font-weight: 500;
@@ -124,7 +100,7 @@ body {
   margin-bottom: 17px;
 }
 
-.block_1_text p:nth-child(2) {
+.intro__text p:nth-child(2) {
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
@@ -132,23 +108,21 @@ body {
   margin-bottom: 51px;
 }
 
-.block_1 button {
+.intro button {
   width: 250px;
   height: 60px;
   background-color: #f53838;
   border: #f53838 none;
   border-radius: 10px;
-  font-family: "Rubik";
-  font-size: 16px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
   box-shadow: 0px 5px 60px rgba(255, 60, 60, 0.35);
 }
 
-/*//////////////////////////////////////////////////////////////*/
+/*/ //////////////////////////////////////////////////////////*/
 
-.block_2 {
+.about {
   width: 100%;
   height: 200px;
   display: flex;
@@ -161,18 +135,18 @@ body {
   margin-bottom: 90px;
 }
 
-.block_2_about {
+.about__info {
   display: flex;
 }
 
-.block_2_about_text {
+.about__info__text {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-left: 35px;
 }
 
-.block_2_about_text h4 {
+.about__info__text h4 {
   font-family: "Rubik";
   font-size: 25px;
   font-weight: 700;
@@ -180,7 +154,7 @@ body {
   margin: 0;
 }
 
-.block_2_about_text p {
+.about__info__text p {
   font-family: "Rubik";
   font-size: 20px;
   font-weight: 400;
@@ -188,80 +162,79 @@ body {
   margin: 0;
 }
 
-/*//////////////////////////////////////////////////////////////*/
+/*            Features            */
 
-.block_3 {
+.features {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 414.71px;
 }
 
-.block_3 img {
+.features img {
   margin-left: 30px;
 }
 
-.block_3_text {
-  margin-right: 2px;
+.features__text {
+  padding: 108px 0px 0px 0px;
+  height: 414.71px;
 }
 
-.block_3_text img {
+.features__text img {
   width: 24px;
   height: 24px;
 }
 
-.block_3_text p {
-  margin: 0px 0px 0px 0px;
-}
-
-.block_3_text p:nth-child(1) {
-  font-family: "Rubik";
+.features__text p:nth-child(1) {
   font-size: 35px;
   font-weight: 500;
   line-height: 50px;
-  color: #0b132a;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
-.block_3_text p:nth-child(2) {
-  font-family: "Rubik";
+.features__text p:nth-child(2) {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   color: #4f5665;
 }
 
-.block_3_ul {
-  padding: 0px 0px 0px 0px;
+.features__list {
+  margin: 0px 0px 0px 0px;
+  padding: 13px 0px 0px 0px;
 }
 
-.block_3_ul li {
+.features__list li {
   display: flex;
-  align-items: left;
-
+  align-items: center;
 }
 
-.block_3_ul p {
+.features__list li img {
+  margin: 0px 0px 0px 0px;
+}
+
+.features__list li p {
   font-family: "Rubik";
   font-size: 14px;
   font-weight: 400;
   color: #4f5665;
 }
 
-.block_3_ul li p {
+.features__list li p {
   margin-left: 10px;
 }
 
-/*//////////////////////////////////////////////////////////////*/
+/* Pricing */
 
-.section_2 {
-  padding: 210px 0px 0px 0px;
-}
-
-.block_4 {
+.pricing {
   text-align: center;
   margin-bottom: 150px;
 }
 
-.block_4 h1 {
+.pricing h1 {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
@@ -270,7 +243,7 @@ body {
   margin: 0px 0px 18px 0px;
 }
 
-.block_4 h2 {
+.pricing h2 {
   font-family: "Rubik";
   font-size: 18px;
   font-weight: 500;
@@ -279,7 +252,7 @@ body {
   margin-bottom: 21px;
 }
 
-.block_4 p {
+.pricing p {
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
@@ -288,13 +261,13 @@ body {
   margin: 0px 0px 62px 0px;
 }
 
-.choose_plan_wrapper {
+.pricingCards {
   display: flex;
   justify-content: space-between;
   padding: 0px 25px;
 }
 
-.choose_plan {
+.pricingCard {
   width: 326px;
   height: 680px;
   border-radius: 10px;
@@ -305,12 +278,12 @@ body {
   justify-content: space-between;
 }
 
-.choose_plan_text {
+.pricingCard__descWrapper {
   display: flex;
   justify-content: center;
 }
 
-.choose_plan_desc {
+.pricingCard__desc {
   margin: 0;
   padding: 0;
   display: flex;
@@ -318,13 +291,13 @@ body {
   align-items: left;
 }
 
-.choose_plan_desc li {
+.pricingCard__desc li {
   height: 30px;
   display: flex;
   margin-bottom: 10px;
 }
 
-.choose_plan_desc p {
+.pricingCard__desc p {
   font-family: "Rubik";
   font-size: 14px;
   font-weight: 400;
@@ -335,15 +308,12 @@ body {
   margin: 0px 0px 0px 20px;
 }
 
-.choose_plan_desc img {
+.pricingCard__desc img {
   width: 24px;
   height: 24px;
 }
 
-.choose_plan_bottom {
-}
-
-.choose_plan_bottom p {
+.pricingCard__Bottom p {
   font-family: "Rubik";
   font-size: 25px;
   font-weight: 500;
@@ -354,7 +324,7 @@ body {
   color: #0b132a;
 }
 
-.choose_plan_bottom button {
+.pricingCard__Bottom button {
   width: 177.88px;
   height: 45px;
   border: 2px #f53838 solid;
@@ -370,12 +340,21 @@ body {
   margin-bottom: 49px;
 }
 
-.block_5 {
+/* Networks */
+
+.networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 76px;
+  margin-bottom: 46px;
 }
 
-.block_5 h1 {
+.networks__text {
+  margin-bottom: 155px;
+}
+
+.networks h1 {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
@@ -385,7 +364,7 @@ body {
   color: #0b132a;
 }
 
-.block_5 p {
+.networks p {
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
@@ -394,12 +373,10 @@ body {
   text-align: center;
   color: #4f5665;
 }
+
 /*/ //////////////////////////////////////////////////////////////////////////*/
 
-.block_6 {
-}
-
-.block_6 h1 {
+.rewiews h1 {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
@@ -410,7 +387,7 @@ body {
   margin-bottom: 20px;
 }
 
-.block_6 h2 {
+.rewiews h2 {
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
@@ -421,13 +398,14 @@ body {
   margin-bottom: 60px;
 }
 
-.card_slide {
+.rewiews__card-slide {
   width: 1298px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
-.card {
+.rewiew__card {
   width: 335px;
   height: 167px;
   border: 2px #f53838 solid;
@@ -435,19 +413,19 @@ body {
   padding: 30px 30px 30px 28px;
 }
 
-.cardTop {
+.rewiew__card_Top {
   display: flex;
   justify-content: space-between;
 }
 
-.userInfo {
+.rewiew__card_userInfo {
   display: flex;
   align-items: center;
   width: 212px;
   height: 50px;
 }
 
-.userInfo img {
+.rewiew__card_userInfo img {
   width: 50px;
   height: 50px;
 }
@@ -483,10 +461,7 @@ body {
   align-items: center;
 }
 
-.cardDown {
-}
-
-.cardText {
+.rewiew__card_Down_text {
   margin: 9px 0px 0px 0px;
   font-family: "Rubik";
   font-size: 16px;
@@ -496,6 +471,32 @@ body {
   text-align: left;
   color: #0b132a;
 }
+
+.pagination {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__indicatorWrapper {
+  width: 9.0277%;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination__indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #dde0e4;
+  border-radius: 7.5px;
+}
+
+.pagination__arrows img {
+  display: flex;
+  align-items: center;
+}
+
 /*/ //////////////////////////////////////////////////////////////////////////*/
 
 .footer {
