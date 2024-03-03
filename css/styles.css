@@ -376,6 +376,10 @@ button {
 
 /*/ //////////////////////////////////////////////////////////////////////////*/
 
+.rewiews {
+  margin-bottom: 48px;
+}
+
 .rewiews h1 {
   font-family: "Rubik";
   font-size: 35px;
@@ -472,7 +476,7 @@ button {
   color: #0b132a;
 }
 
-.pagination {
+.rewiews__pagination {
   width: 100%;
   height: 60px;
   display: flex;
@@ -485,6 +489,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
 .pagination__indicator {
   width: 15px;
   height: 15px;
@@ -492,17 +497,82 @@ button {
   border-radius: 7.5px;
 }
 
-.pagination__arrows img {
+.rewiews__pagination__arrows {
+  width: 140px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.rewiews__pagination__arrows div:nth-child(2) {
+  background-color: #f53838;
+}
+
+.rewiews__pagination__arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border: 2px #f53838 solid;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Subscribe*/
+
+.subscribe {
+  height: 233px;
+  padding: 14px 70px 0px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.subscribe__text {
+  width: 410px;
+}
+
+.subscribe__text h1 {
+  width: 360px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px 0px 8px 0px;
+}
+
+.subscribe__text p {
+  margin: 0;
+  width: 410px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f5665;
+}
+
+.subscribe__button {
+  width: 250px;
+  height: 60px;
+  background-color: #f53838;
+  border: #f53838 none;
+  border-radius: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0px 5px 60px rgba(255, 60, 60, 0.35);
 }
 
 /*/ //////////////////////////////////////////////////////////////////////////*/
 
 .footer {
   width: 100%;
-  background-color: bisque;
-
+  background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
   align-items: center;
