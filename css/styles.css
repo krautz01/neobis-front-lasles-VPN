@@ -23,6 +23,10 @@ button {
   color: #f53838;
 }
 
+li {
+  list-style-type: none;
+}
+
 .wrapper {
   width: 1140px;
 }
@@ -169,6 +173,7 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 414.71px;
+  margin-bottom: 210px;
 }
 
 .features img {
@@ -194,7 +199,7 @@ button {
 }
 
 .features__text p:nth-child(2) {
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 4px 0px;
   padding: 0px 0px 0px 0px;
   font-size: 16px;
   font-weight: 400;
@@ -208,8 +213,10 @@ button {
 }
 
 .features__list li {
+  
   display: flex;
   align-items: center;
+  margin-bottom: 11px;
 }
 
 .features__list li img {
@@ -217,9 +224,9 @@ button {
 }
 
 .features__list li p {
-  font-family: "Rubik";
   font-size: 14px;
   font-weight: 400;
+  line-height: 30px;
   color: #4f5665;
 }
 
@@ -347,7 +354,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 46px;
+  margin-bottom: 84px;
 }
 
 .networks__text {
@@ -362,9 +369,11 @@ button {
   letter-spacing: 0em;
   text-align: center;
   color: #0b132a;
+  margin: 0px 0px 18px 0px;
 }
 
 .networks p {
+  margin: 0px 0px 158px 0px;
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
@@ -570,16 +579,66 @@ button {
 
 /*/ //////////////////////////////////////////////////////////////////////////*/
 
-.footer {
+footer {
   width: 100%;
+  padding: 60px 0px 50px 0px;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu {
+.footer__contacts {
+  width: 340px;
+  height: 280px;
+}
+
+.footer__navWrapper {
+  width: 50%;
+  height: 280px;
   display: flex;
+  justify-content: space-between;
+  padding: 8px 0px 0px 0px;
+}
+
+.footer__contacts p{
+  color: #4f5665;
+  line-height: 30px;
+  margin: 20px 0px 24px 0px;
+}
+
+
+.social_networks {
+  
+  width: 320px;
+  height: 33.6px;
+  margin-bottom: 18px;
+}
+
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer__nav h2 {
+  margin: 0px 0px 24px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer__nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav li {
+  color: #4f5665;
+  margin-bottom: 21.5px;
 }
 
 .auth {
